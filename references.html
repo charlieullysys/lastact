@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .card-body {
+            height: 300px; /* Fixed height for card body */
+            display: flex;
+            flex-direction: column;
+        }
+        .card-title h2 {
+            font-size: 1.5rem; /* Adjust font size as needed */
+        }
+        .card-text {
+            flex-grow: 1;
+        }
+        .card img {
+            max-height: 270px;
+            object-fit: cover;
+        }
+        .btn {
+            margin-top: auto;
+        }
+        .navbar-custom {
+            background-color: rgb(173, 251, 253);
+            padding: 1rem 2rem;
+        }
+        .navbar-brand img {
+            width: 90px;
+            border-radius: 15px;
+        }
+        .nav-item {
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #e0e0e0;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="pics/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="localnews.html">Local News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="weathernews.html">Weather News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="snew.html">Showbiz News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sports News
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                        <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="olympic.html">Olympics</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="references.html">References</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+        
+        <div class="text-center my-5">
+            <h1>SPORTS NEWS</h1>
+            <br>
+            <h1>REFERENCES</h1>
+            <hr/>
+        </div>
+
+        <!-- row starts-->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/pba1.png" class="img-fluid" alt="PBA Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Tropa, E-Painters dispute last semis berth</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                The TNT-Rain or Shine showdown has been a showdown and a shootout, with the battle only expected to be more intense as the two teams slug it out in a knockout duel to determine the side that will complete the PBA Philippine Cup Final Four picture.
+                            </p>
+                        </div>
+                        <a href="https://www.pba.ph/news/tropa-e-painters-dispute-last-semis-berth" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/nba1.png" class="img-fluid" alt="NBA Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Thunder change pace after halftime</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                The Thunder responded in kind and put the clamps on the Mavs' offense in the third quarter, limiting Dallas to 15 points in the stanza. Gilgeous-Alexander scored 12 points in the quarter as the Thunder finished on a 22-12 run to cut their deficit to 69-65 for the start of the fourth.
+                            </p>
+                        </div>
+                        <a href="https://www.cbssports.com/nba/news/mavericks-vs-thunder-score-highlights-takeaways-okc-surges-late-to-even-series-in-game-4-win-over-mavs/live/" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/vb1.jpg" class="img-fluid" alt="Volleyball Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Letran, LPU dispute last NCAA Season 99 women's volleyball finals berth | NCAA Philippines</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                Colegio de San Juan de Letran and Lyceum of the Philippines University will slug it out in the second round of the stepladder semifinals on Wednesday with the last finals berth in the NCAA Season 99 women's volleyball tournament at stake.
+                            </p>
+                        </div>
+                        <a href="https://www.gmanetwork.com/ncaa/sports/volleyball/906700/letran-lpu-dispute-last-ncaa-season-99-women-s-volleyball-finals-berth/story/" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/olym1.png" class="img-fluid" alt="Olympic Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>The ride of his life: Olympic champion Horigome Yuto facing moment of truth in Shanghai</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                The Tokyo 2020 men's street skateboarding gold medallist has to start delivering in this week's Olympic Qualifier Series in the People's Republic of China if he is to return to the Games this summer in Paris.
+                            </p>
+                        </div>
+                        <a href="https://olympics.com/en/news/olympic-qualifier-series-shanghai-horigome-yuto" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/sn1.jpg" class="img-fluid" alt="Soccer Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Rosmar Tan gifts Diwata PHP5M-worth of cash, house and lot</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                Businesswoman Rosmar Tan (left) surprises Diwata with gifts such as PHP1 million cash, house and lot, and many more. Rosmar mentioned that her gifts to Diwata is PHP5 million in total.
+                            </p>
+                        </div>
+                        <a href="https://www.pep.ph/news/local/180595/rosmar-tan-diwata-a717-20240509" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/sn2.jpg" class="img-fluid" alt="Tennis Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Sofia Andres feels lucky to have found sisters in Kathryn Bernardo, Sarah Lahbati</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                In an interview with PEP.ph, Sofia Andres expresses her gratitude for having forged genuine bonds with fellow actresses Kathryn Bernardo and Sarah Lahbati: "Minsan lang may loyal and so I really want to take care of the both of them."
+                            </p>
+                        </div>
+                        <a href="https://www.pep.ph/lifestyle/lifestyle/178370/sofia-andres-friendship-kathryn-bernardo-sarah-lahbati-a721-20240226?ref=home_xbrid_1" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/sn3.jpg" class="img-fluid" alt="Formula 1 Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Luis Manzano may rebelasyon tungkol sa inang si Vilma Santos</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                Maraming rebelasyon si Luis Manzano tungkol sa inang si Vilma Santos sa pilot episode ng My Mother, My Story, na nagsimulang umere sa GMA-7 kahapon, Mother's Day, May 12, 2024.
+                            </p>
+                        </div>
+                        <a href="https://www.pep.ph/pepalerts/cabinet-files/180677/luis-manzano-vilma-santos-a734-20240513?ref=home_xbrid_1" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card mb-5 shadow-sm">
+                    <img src="img/sn4.jpg" class="img-fluid" alt="Boxing Image">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>Dina Bonnevie, tinatakbuhan noon ni Mayor Vico Sotto</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                Ibinahagi ni Dina Bonnevie na palagi siyang tinatakbuhan noon ni Vico Sotto noong bata pa ang Pasig City mayor.
+                            </p>
+                        </div>
+                        <a href="https://www.pep.ph/pepalerts/cabinet-files/180643/dina-bonnevie-vico-sotto-a734-20240510?ref=home_xbrid_2" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

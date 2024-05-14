@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+       .card {
+            width: 100%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .carousel-item img {
+            height: 750px;
+        }
+        .navbar-custom {
+            background-color: rgb(173, 251, 253);
+            padding: 1rem 2rem;
+        }
+        .navbar-brand img {
+            width: 90px;
+            border-radius: 15px;
+        }
+        .nav-item{
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #e0e0e0;
+            color: black;
+        }
+        .dropdown-menu{
+            border-radius: 15px;
+        }
+        footer{
+            padding: 1%;
+        }
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="pics/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="localnews.html">Local News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="weathernews.html">Weather News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="snew.html">Showbiz News</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sports News
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="olympic.html">Olympics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="references.html">References</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2>Ammonia leak hits Pasay</h2>
+                <h6>14 May, 2024 - Nillicent Bautista </h6><br>
+                <div class="card">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="pics/ammonialeaks1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <video src="pics/ammoialeak.mp4" class="d-block w-100" alt="..." controls="">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                        
+                        
+                    <div class="card-body">
+                        <h5 class="card-title">Ammonia leak hits Pasay</h5>
+                        <p class="card-text">
+                            MANILA, Philippines — An ammonia leak hit an ice plant in Pasay City yesterday, according to the Bureau of Fire Protection (BFP).<br><br>
+
+                            The BFP said it received a report of an ammonia leak at the Summit Ice facility along F.B. Harrison street in Barangay 3 at past 10 a.m.<br><br>
+
+                            Upon arriving at the scene, fire responders isolated the area and immediately closed the valve to stop the leak.<br><br>
+
+                            The BFP declared the situation under control at around 12 noon.<br><br>
+
+                            Four fire volunteers were reported to have suffered difficulty in breathing after inhaling hazardous chemicals. They were declared out of danger, according to a radio report. <br><br>
+
+                            A portion of FB Harrison street was closed for safety precautions. It has been reopened to motorists.
+                        
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="container">
+      <div class="text-center">
+        <h3>See more News</h3>
+        <hr/>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Local News</h5>
+              <p class="card-text">See some Local news in your nearby area or nearby place</p>
+              <a href="localnews.html" class="btn btn-primary">Go Local News</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Weather News</h5>
+              <p class="card-text">See the news about the weather in the country and the future happening in the country</p>
+              <a href="weathernews.html" class="btn btn-primary">Go Weather News</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sports News</h5>
+              <p class="card-text">See the latest happenings in the sports in the local and International</p>
+              <a href="pba.html" class="btn btn-primary">PBA</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Showbiz News</h5>
+              <p class="card-text">See showbiz chikas, know about the artist you love see the last happenings in their life</p>
+              <a href="snew.html" class="btn btn-primary">Go showbiz News</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Footer -->
+<footer class="bg-dark text-white mt-4 py-3">
+  <div class="container text-center">
+      <p>&copy; 2024 PhilHub News. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

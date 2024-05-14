@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+       .card {
+            width: 90%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .carousel-item img {
+            height: 650px;
+        }
+        .navbar-custom {
+            background-color: rgb(173, 251, 253);
+            padding: 1rem 2rem;
+        }
+        .navbar-brand img {
+            width: 90px;
+            border-radius: 15px;
+        }
+        .nav-item{
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #e0e0e0;
+            color: black;
+        }
+        .dropdown-menu{
+            border-radius: 15px;
+        }
+        footer{
+            padding: 1%;
+        }
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="pics/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="localnews.html">Local News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="weathernews.html">Weather News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="snew.html">Showbiz News</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sports News
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="olympic.html">Olympics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="references.html">References</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h2>Metro Manila, 34 other areas seen to have ‘dangerous’ heat index</h2>
+            <h6>13 May, 2024- John Eric Mendoza</h6><br>
+            <div class="card">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pics/heat1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pics/mototaxi3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Metro Manila, 34 other areas seen to have ‘dangerous’ heat index</h5>
+                    <p class="card-text">
+                        MANILA, Philippines — Metro Manila and 35 other areas in the country nationwide are expected to have dangerous levels of heat index on Monday, according to the state weather bureau. <br><br>
+
+                        The heat index under the “danger” category ranges from 42°C to 51°C, according to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (Pagasa). <br><br>
+                        Pagasa said its station in Ninoy Aquino International Airport in Pasay and Science Garden in Quezon City are seen to record a heat index of 43°C and 42°C, respectively. <br>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    The 34 other areas to reach ‘danger’ heat index level are as follows: 
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h2>Highest Temperatures in the Philippines</h2>
+                                    <ul>
+                                      <li>Aparri, Cagayan – 47°C</li>
+                                      <li>Dagupan, Pangasinan – 46°C</li>
+                                      <li>Tugegarao City, Cagayan – 46°C</li>
+                                      <li>Roxas City, Capiz – 46°C</li>
+                                      <li>Guian, Eastern Samar – 46°C</li>
+                                      <li>Laoag, Ilocos Norte – 45°C</li>
+                                      <li>Echague, Isabela – 45°C</li>
+                                      <li>Iloilo City, Iloilo – 45°C</li>
+                                      <li>Bacnotan, La Union – 44°C</li>
+                                      <li>San Jose, Occidental Mindoro – 44°C</li>
+                                      <li>Puerto Princesa, Palawan – 44°C</li>
+                                      <li>Cuyo, Palawan – 44°C</li>
+                                      <li>Dumangas, Iloilo – 44°C</li>
+                                      <li>Batac, Ilocos Norte – 43°C</li>
+                                      <li>Baler, Aurora – 43°C</li>
+                                      <li>Aborlan, Palawan – 43°C</li>
+                                      <li>Virac, Catanduanes – 43°C</li>
+                                      <li>Catarman, Northern Samar – 43°C</li>
+                                      <li>Catbalogan, Samar – 43°C</li>
+                                      <li>Butuan City, Aguan del Norte – 43°C</li>
+                                      <li>Sinait, Ilocos Sur – 42°C</li>
+                                      <li>Bayombong, Nueva Viscaya – 42°C</li>
+                                      <li>Iba, Zambales – 42°C</li>
+                                      <li>Casiguran, Aurora – 42°C</li>
+                                      <li>Subic Bay, Olongapo City – 42°C</li>
+                                      <li>Tanauan, Batangas –  42°C</li>
+                                      <li>Daet, Camarines Norte – 42°C</li>
+                                      <li>Masbate City, Masbate – 42°C</li>
+                                      <li>Pili, Camarines Sur – 42°C</li>
+                                      <li>Siquijor, Siquijor – 42°C</li>
+                                      <li>Tacloban, Leyte – 42°C</li>
+                                      <li>Borongan, Eastern Samar – 42°C</li>
+                                      <li>Dipolog, Zamboanga del Norte – 42°C</li>
+                                      <li>Zamboanga City, Zamboanga del Sur – 42°C</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <br>
+                        Heat index in those areas may cause heat cramps, heat exhaustion and even heat stroke during continued exposure, according to Pagasa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+    <div class="container">
+      <div class="text-center">
+        <h3>See more News</h3>
+        <hr/>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Local News</h5>
+              <p class="card-text">See some Local news in your nearby area or nearby place</p>
+              <a href="localnews.html" class="btn btn-primary">Go Local News</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Weather News</h5>
+              <p class="card-text">See the news about the weather in the country and the future happening in the country</p>
+              <a href="weathernews.html" class="btn btn-primary">Go Weather News</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sports News</h5>
+              <p class="card-text">See the latest happenings in the sports in the local and International</p>
+              <a href="pba.html" class="btn btn-primary">PBA</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Showbiz News</h5>
+              <p class="card-text">See showbiz chikas, know about the artist you love see the last happenings in their life</p>
+              <a href="snew.html" class="btn btn-primary">Go showbiz News</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Footer -->
+<footer class="bg-dark text-white mt-4 py-3">
+    <div class="container text-center">
+        <p>&copy; 2024 PhilHub News. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

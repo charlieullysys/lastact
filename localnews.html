@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local News</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .card {
+            width: 100%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .card img, .card video {
+            width: 100%;
+            cursor: pointer;
+        }
+        .carousel-item img {
+            height: 550px;
+        }
+        .navbar-custom {
+            background-color: rgb(173, 251, 253);
+            padding: 1rem 2rem;
+        }
+        .navbar-brand img {
+            width: 90px;
+            border-radius: 15px;
+        }
+        .nav-item {
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #e0e0e0;
+            color: black;
+        }
+        .dropdown-menu {
+            border-radius: 15px;
+        }
+        footer {
+            padding: 1%;
+        }
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="pics/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="localnews.html">Local News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="weathernews.html">Weather News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="snew.html">Showbiz News</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sports News
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                    <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="olympic.html">Olympics</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="references.html">References</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+
+<div class="container">
+  <div class="text-center my-5">
+      <h1>Latest in the Local News</h1>
+      <hr/>
+  </div>
+
+  <!-- row starts-->
+  <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card mb-5 shadow-sm">
+              <img src="pics/farm1.jpg" alt="Farmers" data-bs-toggle="modal" data-bs-target="#modalFarmers">
+              <div class="card-body">
+                  <div class="card-title">
+                      <h2>Pinoy farmers’ income up by 20 percent – World Bank</h2>
+                  </div>
+                  <div class="card-text">
+                      <p>Filipino farmers’ income has increased by 20 percent as a result of World Bank-funded projects under the Philippine Rural Development Project (PRDP)</p>
+                  </div>
+                  <a href="farm.html" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Read the full article">Read More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card mb-5 shadow-sm">
+              <video src="pics/ammoialeak.mp4" class="img-fluid" controls="" data-bs-toggle="modal" data-bs-target="#modalAmmonia"></video>
+              <div class="card-body">
+                  <div class="card-title">
+                      <h2>Ammonia Leak in Pasay</h2>
+                  </div>
+                  <div class="card-text">
+                      <p>An ammonia leak hit an ice plant in Pasay City yesterday, according to the Bureau of Fire Protection (BFP).</p>
+                  </div>
+                  <a href="ammonia.html" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Read the full article">Read More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card mb-5 shadow-sm">
+              <img src="pics/mototaxi1.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#modalMotoTaxi">
+              <div class="card-body">
+                  <div class="card-title">
+                      <h2>LTFRB: End motorcycle taxi pilot program</h2>
+                  </div>
+                  <div class="card-text">
+                      <p>LTFRB has recommended to the House of Representatives the termination of the five-year motorcycle taxi pilot program and endorsed three original players to be allowed to operate until the passage of a law.</p>
+                  </div>
+                  <a href="motor.html" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Read the full article">Read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- row ends-->
+
+<!-- Modals -->
+<div class="modal fade" id="modalFarmers" tabindex="-1" aria-labelledby="modalFarmersLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalFarmersLabel">Pinoy farmers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="pics/farm1.jpg" class="img-fluid" alt="Farmers">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalAmmonia" tabindex="-1" aria-labelledby="modalAmmoniaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalAmmoniaLabel">Ammonia Leak in Pasay</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <video src="pics/ammoialeak.mp4" class="img-fluid" controls=""></video>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMotoTaxi" tabindex="-1" aria-labelledby="modalMotoTaxiLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalMotoTaxiLabel">LTFRB: End motorcycle taxi pilot program</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="pics/mototaxi1.jpg" class="img-fluid" alt="Moto Taxi">
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))</script>
+
+</body>
+</html>

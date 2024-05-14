@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+       .card {
+            width: 90%;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            padding: 1rem;
+        }
+        .carousel-item img {
+            height: 650px;
+        }
+        .navbar-custom {
+            background-color: rgb(173, 251, 253);
+            padding: 1rem 2rem;
+        }
+        .navbar-brand img {
+            width: 90px;
+            border-radius: 15px;
+        }
+        .nav-item{
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #e0e0e0;
+            color: black;
+        }
+        .dropdown-menu{
+            border-radius: 15px;
+        }
+        footer{
+            padding: 1%;
+        }
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="pics/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="localnews.html">Local News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="weathernews.html">Weather News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="snew.html">Showbiz News</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sports News
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="volleyball.html">Volleyball</a></li>
+                <li><a class="dropdown-item" href="pba.html">PBA</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="olympic.html">Olympics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="references.html">References</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h2>Agriculture losses due to El Niño hit P1.23 billion</h2>
+            <h6>March 12, 2024- Rhodina Villanueva, Pia Lee-Brago</h6><br>
+            <div class="card">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pics/elnino1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pics/elnino2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Agriculture losses due to El Niño hit P1.23 billion</h5>
+                    <p class="card-text">
+                        MANILA, Philippines — The agriculture sector has suffered P1.23 billion worth of damage due to the El Niño phenomenon since January, the National Disaster Risk Reduction and Management Council (NDRRMC) said yesterday.<br><br>
+
+                        In its latest report, the NDRRMC said Western Visayas was the hardest-hit region with P678.7 million in agricultural damage, followed by Mimaropa (P319.7 million), Cagayan Valley (P180.4 million), Ilocos (P54.4 million), Calabarzon (P2.75 million) and Zamboanga peninsula (P717,527).<br><br>
+                        
+                        El Niño has so far affected 29,409 farmers and fisherfolk and 26,731 hectares of crops nationwide.<br><br>
+                        
+                        The Department of Agriculture said the government is ready to provide credit and insurance assistance to farmers and fisherfolk affected by the weather aberration usually characterized by a long dry spell.<br><br>
+                        
+                        According to the United Nations weather agency, the 2023-24 El Niño is one of the five strongest on record. While it is now gradually weakening, it would continue to impact heavily on the global climate in the coming months.<br><br>
+                        
+                        Above normal temperatures are predicted over almost all land areas between March and May.<br><br>
+                        
+                        An update from the World Meteorological Organization said there is about a 60 percent chance of El Niño persisting during March-May and an 80 percent chance of neutral conditions – neither El Niño or La Niña – in April to June.<br><br>
+                        
+                        There is a chance of La Niña developing later in the year, but the odds are currently uncertain, according to experts.
+                        
+                        Hospitals across the country, meanwhile, are prepared for medical emergencies and other health issues that are expected to arise due to the effects of El Niño, the Department of Health said yesterday.<br><br>
+                        
+                        In a report to the Presidential Task Force on El Niño, DOH officials said they are working closely with relevant national government agencies to ensure there will be no disruption in medical and health care services for the duration of El Niño.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+    <div class="container">
+      <div class="text-center">
+        <h3>See more News</h3>
+        <hr/>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Local News</h5>
+              <p class="card-text">See some Local news in your nearby area or nearby place</p>
+              <a href="localnews.html" class="btn btn-primary">Go Local News</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Weather News</h5>
+              <p class="card-text">See the news about the weather in the country and the future happening in the country</p>
+              <a href="weathernews.html" class="btn btn-primary">Go Weather News</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sports News</h5>
+              <p class="card-text">See the latest happenings in the sports in the local and International</p>
+              <a href="pba.html" class="btn btn-primary">PBA</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Showbiz News</h5>
+              <p class="card-text">See showbiz chikas, know about the artist you love see the last happenings in their life</p>
+              <a href="snew.html" class="btn btn-primary">Go showbiz News</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Footer -->
+<footer class="bg-dark text-white mt-4 py-3">
+    <div class="container text-center">
+        <p>&copy; 2024 PhilHub News. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
